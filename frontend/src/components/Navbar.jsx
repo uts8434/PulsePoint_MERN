@@ -151,7 +151,7 @@ const Navbar = () => {
         
         {showMenu && (
           <div className="absolute top-24 left-4 right-4   h-screen bg-purple-600 text-white shadow-lg rounded-b-2xl flex flex-col items-center py-4 md:hidden z-50 transition-all duration-300">
-            {["/", "/doctors", "/about", "/contact"].map((path, i) => (
+            {["/", "/doctors", "/about", "/contact","/login"].map((path, i) => (
               <NavLink 
                 key={i} 
                 to={path} 
@@ -162,7 +162,7 @@ const Navbar = () => {
                   }`
                 }
               >
-                {["HOME", "ALL DOCTORS", "ABOUT", "CONTACT"][i]}
+                {["HOME", "ALL DOCTORS", "ABOUT", "CONTACT","Sign Up/ Login"][i]}
               </NavLink>
             ))}
             <NavLink 
