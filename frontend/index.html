@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Updated Content-Security-Policy to allow PayPal SDK script loading -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://www.paypal.com https://www.paypalobjects.com 'unsafe-inline';">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse Point</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- Main React entry script -->
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- PayPal SDK Script with Client ID and Currency -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AZ6GgQiifJurD1LUrIc99IJRHdlHNFxTEVvrGc0BuNjMKCSF61UC1n0bMR0-GzGFuKBO2sRJ1Qh6r7qe&currency=USD"></script>
+  </body>
+</html>
